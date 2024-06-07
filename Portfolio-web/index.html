@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-  <!-- explicacion: lo primero que deben incluir dentro del documento html es el head, 
-    dentro de el agregaremos titulo, enlaces a hojas de estilo y fuentes entre otras cosas -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,14 +13,15 @@
     />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
   </head>
-  <!-- repaso de la estructura del head -->
-  <!-- explicacion: Luego deben agregar el body -->
   <body class="scroll">
-    <!-- explicacion: dentro del body lo primero que deben agregar es el header y la barra de navegacion -->
     <header class="encabezado">
       <nav class="navegacion">
         <a class="navegacion__enlace" href="#presentacion">
-          <h2 class="navegacion__titulo">Informatorio</h2>
+          <h2 class="navegacion__titulo">
+            <img src="./assets/images/logos/informatorio-logo.png" alt="" class="logo_informatorio">
+            Informatorio
+          </h2>
+          
         </a>
         <ul class="enlaces">
           <li class="enlaces__item">
@@ -37,18 +36,12 @@
         </ul>
       </nav>
     </header>
-    <!-- repaso de la estructura del header y explicacion de los enlaces -->
-
-    <!-- explicacion: A continuacion incluiremos la etiqueta main -->
     <main class="principal">
-      <!-- explicacion: dentro de esta etiqueta agregaremos las diferentes secciones de nuestra página -->
-
-      <!-- explicacion: Comenzaremos incluyendo una vista de presentacion -->
       <section class="presentacion" id="presentacion">
         <div class="presentacion__contenedor_info">
-          <h1 class="presentacion__titulo">Soy Desarrollador</h1>
+          <h1 class="presentacion__titulo">Bienvenido</h1>
           <p class="presentacion__parrafo">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Mi nombre es Santiago Emanuel Cabrera, tengo 21 años y actualmente estoy estudiando Tecnicatura en Programación en la UTN. Soy un apasionado por la tecnología y la programación, me encanta aprender cosas nuevas y superar desafíos. En este sitio podrás encontrar información sobre mi, mis proyectos y como contactarme.
           </p>
           <div class="presentacion__contenedor_botones">
             <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
@@ -61,25 +54,23 @@
             >
           </div>
         </div>
+        <div class="divisor">
+        </div>
       </section>
-      <!-- repaso de las partes de la seccion -->
-
-      <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
-        sobre nuestra historia personal, para ello escribiremos lo siguiente -->
       <article class="articulo sobre_mi" id="sobre-mi">
-        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <h2 class="articulo__titulo">Sobre mi</h2>
         <div class="articulo__contenedor_descripciones">
           <section class="seccion_descripcion">
             <div class="seccion_descripcion__porta_retrato">
               <img
                 class="seccion_descripcion__imagen"
-                src="./assets/images/profile/trabajo2.jpg"
-                alt="foto trabajando en la oficina"
-                title="trabajando en la oficina"
+                src="./assets/images/profile/mi-foto.jpg"
+                alt="Yo, Santiago Emanuel Cabrera"
+                title="Santiago Emanuel Cabrera"
               />
             </div>
             <div
-              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              
               aria-label="descripcion personal"
             >
               <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
@@ -90,120 +81,52 @@
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Hice la secundaria en el colegio tecnico Nro. 24 Simon de Iriondo de Resistencia, en la orientacion de Gestion Administrativa Organizacional. Luego de terminar la secundaria, decidi estudiar la tecnicatura en programacion en la UTN, ya que siempre me gusto la tecnologia y la programacion.
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mi historia"
                 aria-describedby="mi_historia_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Gran parte de mis conocimientos de Frontend los adquiri en el informatorio, donde aprendi a utilizar HTML, CSS, JavaScript, React y Bootstrap. Tambien aprendi a utilizar Git y GitHub, lo cual me permitio subir mis proyectos a la web y compartirlos con el mundo.
               </p>
             </div>
           </section>
-          <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
-            pero cambiaremos el orden de los elementos dejando la imagen al final -->
           <section class="seccion_descripcion">
             <div
-              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              
               aria-label="descripcion personal"
             >
               <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
-                Mis hobbies
+                Mis hobbies y pasatiempos
               </h3>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mis hobbies"
                 aria-describedby="mis_hobbies_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                En mi tiempo libre me gusta jugar videojuegos, ver series, peliculas y ver anime escuchar musica y leer. Tambien ir al gimnasio y estudiar programacion y cosas de la facultad.
               </p>
               <p
                 class="seccion_descripcion__parrafo"
                 aria-label="Detalles de mis hobbies"
                 aria-describedby="mis_hobbies_titulo"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
+                Me encanta pasar tiempos con mis amigos y familia, salir a comer y disfrutar de la vida.
               </p>
             </div>
             <div class="seccion_descripcion__porta_retrato">
               <img
-                class="seccion_descripcion__image"
-                src="./assets/images/profile/trabajo3.jpg"
-                alt="foto mientras me encontraba en una reunion de trabajo"
-                title="selfie en una reunion"
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/mi-foto-posando.jpg"
+                alt="Yo tomando mates"
+                title="mateando"
               />
             </div>
           </section>
         </div>
       </article>
-      <!-- repaso article sobre mi y su estructura -->
-
-      <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
-      no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
-      podran ir actualizando la informacion de esta seccion -->
-      <article class="articulo proyectos" id="proyectos">
+      <!-- <article class="articulo proyectos" id="proyectos">
         <h2 class="articulo__titulo">Mis proyectos</h2>
         <div class="contenedor_tarjetas_grid">
           <article
@@ -234,8 +157,6 @@
               >
             </div>
           </article>
-          <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
-            Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
           <article
             class="tarjeta"
             aria-label="presentacion de proyecto personal"
@@ -371,24 +292,18 @@
             </div>
           </article>
         </div>
-      </article>
-      <!-- repaso del articulo proyectos -->
+      </article> -->
     </main>
-    <!-- repaso de todo lo incluido en la etiqueta main -->
-
-    <!-- Por ultimo deben agregar la etiqueta footer. 
-      En esta aparecera nuestra informacion de contacto y 
-      también inluiremos enlaces de navegacion y derechos. -->
+    <div class="divisor">
+    </div>
     <footer class="pie_de_pagina" role="contentinfo">
-      <!-- explicacion: la primer columna sera para nuestras redes,
-        cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
       <div class="pie_de_pagina__columna">
         <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
         <ul class="enlaces enlaces_redes">
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="https://github.com/RamaAlves"
+              href="https://github.com/SantiCabrera19"
               target="_blank"
               ><img
                 class="enlaces__icono"
@@ -400,7 +315,7 @@
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="https://www.instagram.com/ramiro_alves_/"
+              href="https://www.instagram.com/santi.cabreraxd/"
               target="_blank"
             >
               <img
@@ -414,7 +329,7 @@
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="https://twitter.com/1394Alves"
+              href="https://x.com/Santiago42331"
               target="_blank"
               ><img
                 class="enlaces__icono"
@@ -425,21 +340,19 @@
           </li>
         </ul>
       </div>
-      <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
       <div class="pie_de_pagina__columna">
         <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
         <ul class="enlaces enlaces_vertical">
           <li class="enlaces__item">
             <a
               class="enlaces__enlace enlaces__enlace_footer"
-              href="mailto:mail@mail.com"
+              href="cabrerasanty321@gmail.com"
               target="_blank"
-              >Mail: mail@mail.com</a
+              >Email: cabrerasanty321@gmail.com</a
             >
           </li>
         </ul>
       </div>
-      <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
       <div class="pie_de_pagina__columna" role="navigation">
         <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
         <ul class="enlaces enlaces_vertical">
@@ -462,11 +375,9 @@
           </li>
         </ul>
       </div>
-      <!-- por ultimo los derechos de la pagina -->
       <div class="pie_de_pagina__copyright">
         <p>©️Copyright 2024</p>
       </div>
     </footer>
-    <!-- repaso de los elementos en el footer -->
   </body>
 </html>
